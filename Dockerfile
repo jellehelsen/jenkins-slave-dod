@@ -2,6 +2,6 @@ FROM jenkins/jnlp-slave
 
 USER root
 
-RUN apt-get update && apt-get install libltdl7 && addgroup docker --gid 999 && addgroup jenkins docker
+RUN apt-get update && apt-get install libltdl7
 
 USER jenkins
